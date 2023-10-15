@@ -1,0 +1,13 @@
+Task #1
+Q1: Explain the difference between the = operator and the == operator in Python.
+Ans: = operater is used to assign the value to the variable where as == operator is use to compare to variables of same type.
+
+Q2: What does the ** operator do in Python, and how is it used?
+Ans: ** operator is used to raise to the power. 
+eg: a=2
+    b=3
+    c= a**b # 2*2*2
+    print(c) # o/p: 8
+
+Q3: What does the ^ operator do in Python, and in what context is it commonly used?
+Ans: ^ operator is Exclusive OR it is a bitwise operator. It gives 1 if one of the value is 1 but 0 both are 1 or both are zero.
