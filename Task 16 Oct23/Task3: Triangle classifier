@@ -1,0 +1,11 @@
+side1= float(input("Enter the length of side1:\n"))
+side2= float(input("Enter the length of side2:\n"))
+side3= float(input("Enter the length of side3:\n"))
+if side1 < 0 or side2 <0 or side3 < 0:
+    print("Enter valid Length")
+elif side1 == side2 == side3:
+    print("Triangle is equilateral")
+elif (side1 == side2 != side3) or (side1 == side3 != side2) or (side2 == side3 != side1):
+    print("Triangle is isosceles")
+else:
+    print("Triangle is scalene")
