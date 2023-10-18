@@ -1,0 +1,15 @@
+
+num=int(input("Enter the factorial to input: \n"))
+if num <0:
+    print(("Enter a non-negative integer."))
+else:
+    product=1
+    print(f"{num}! is",end=" ")
+    for i in range(num,0,-1):
+        if i != 1:
+            print(f"{i} x ",end="")
+        else:
+            print(f"{i}", end="")
+        product *=i
+    print(f",which equals {product}")
+
