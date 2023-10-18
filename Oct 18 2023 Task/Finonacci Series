@@ -1,0 +1,16 @@
+
+num=int(input("Enter the number of numbers you want to print for Finonacci Series: \n"))
+List=[]
+if num == 0:
+    List.append(0)
+elif num ==1:
+    List.append(0)
+    List.append(1)
+else:
+    List.append(0)
+    List.append(1)
+    for i in range(2,num):
+        sum= List[i-2]+List[i-1]
+        List.append(sum)
+for i in List:
+    print(i,end=" ")
