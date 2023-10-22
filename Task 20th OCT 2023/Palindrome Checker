@@ -1,0 +1,11 @@
+def palindrome(Str1):
+    flag= False
+    if Str1 == Str1[::-1]:
+        flag=True
+    return flag
+
+
+if palindrome(input("Enter the string Check: \n")):
+    print("Is palindrome")
+else:
+    print("Is not palindrome ")
