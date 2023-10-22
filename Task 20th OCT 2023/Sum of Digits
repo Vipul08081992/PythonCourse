@@ -1,0 +1,20 @@
+
+def sumOfDigits(num):
+    if num <0:
+        return"Enter positive number"
+    else:
+        sum=0
+        while num > 0:
+            sum += num % 10
+            num //= 10
+        return sum
+
+print(sumOfDigits(int(input("Enter the positive integer to get sum of digits: \n"))))
+
+
+
+
+
+
+
+
