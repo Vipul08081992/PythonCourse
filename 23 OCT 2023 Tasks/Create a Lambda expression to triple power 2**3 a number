@@ -1,0 +1,2 @@
+n=lambda num:num**3
+print(n(9))
