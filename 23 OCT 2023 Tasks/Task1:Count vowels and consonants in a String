@@ -1,0 +1,19 @@
+
+def countVowelconsonants(Str1):
+    vowel="aeiou"
+    consonants="bcdfghjklmnpqrstvwxyz"
+    vol,con=0,0
+    for i in Str1.lower():
+        if i in vowel:
+            vol +=1
+        elif i in consonants:
+            con +=1
+        else:
+            continue
+
+    return vol,con
+
+Count=countVowelconsonants(input("Enter the string"))
+print(f'''
+           vowels={Count[0]}
+            Consonants={Count[1]}''')
