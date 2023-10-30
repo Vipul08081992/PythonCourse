@@ -1,0 +1,18 @@
+#Program1:Find the maximum and minimum elements in a tuple.
+def max_min(l):
+    # Maximum in tuple
+    m=l[0]
+    for i in l[1:]:
+        if i > m :
+            m=i
+    print("Maximum element in tuple: ",m)
+
+    # Minimum in tuple
+    m=l[0]
+    for i in l[1:]:
+        if i < m:
+            m = i
+    print("Minimum element in tuple: ", m)
+
+my_tuple = (15, 8, 25, 36, 42, 10)
+max_min(my_tuple)
