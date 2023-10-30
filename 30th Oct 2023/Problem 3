@@ -1,0 +1,7 @@
+#Program 3:Remove duplicate elements from a list.
+def unique_element(l):
+    Set1=set(l)
+    print("Unique elements list:",list(Set1))
+
+my_list = [1, 2, 2, 3, 4, 4, 5]
+unique_element(my_list)
