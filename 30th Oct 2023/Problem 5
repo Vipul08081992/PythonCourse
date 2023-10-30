@@ -1,0 +1,25 @@
+#Program 5:Convert to Dict JSON Response and Print and Booking Id AND checkin and Checkout Data
+
+def converttoDict(J):
+    print(f'''
+            Booking Id : {J.get("bookingid")}
+            Checkin : {J.get("booking").get("bookingdates").get("checkin")}
+            Checkout : {J.get("booking").get("bookingdates").get("checkout")} 
+            ''')
+
+J={
+"bookingid": 2384,
+"booking": {
+"firstname": "PRAMOD",
+"lastname": "Dutta",
+"totalprice": 432,
+"depositpaid": False,
+"bookingdates": {
+"checkin": "2022-01-01",
+"checkout": "2022-01-01"
+},
+"additionalneeds": "Lunch"
+}
+}
+
+converttoDict(J)
