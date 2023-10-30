@@ -1,0 +1,16 @@
+#Program 2:Find the intersection and union of two sets.
+
+def intersection_in_set(s1,s2):
+
+    n=set()
+    for i in s1:
+        for j in s2:
+            if j == i:
+                n.add(i)
+    print(f"Intesection of Set1 {s1} and Set2 {s2} is  {n}")
+
+set1 = {1, 2, 3, 4, 5}
+
+set2 = {3, 4, 5, 6, 7}
+
+intersection_in_set(set1,set2)
