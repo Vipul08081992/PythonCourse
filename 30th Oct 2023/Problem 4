@@ -1,0 +1,14 @@
+#Program 4:Remove a key-value pair from the dictionary.
+
+def remove_key_value(Dic):
+        Dic.pop("Month")
+        print("Updated Dic:",Dic)
+
+Dic={
+        "name":"Vipul",
+        "Age":32,
+        "year":1992,
+        "Month":"March",
+        "Day":8
+}
+remove_key_value(Dic)
