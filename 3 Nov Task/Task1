@@ -1,0 +1,80 @@
+class Car:
+    car_name = None
+    free_service=None
+    seater=None
+    millage=None
+    tank_capacity=None
+    #method1
+    def start_car(self):
+        print("The %s starts"% self.car_name)
+    #method2
+    def stop_car(self):
+        print("The %s starts" % self.car_name)
+    #methodd3
+    def sit_in_car(self):
+        for i in range(int(self.seater)+1):
+            if i < int(self.seater):
+                print("Please sit")
+                sit= input("More to sit y for yes \n n for no")
+                ans= True if sit == "y" else False
+                if ans:
+                    continue
+                else:
+                    break
+            else:
+                print("Car is full")
+    #method4
+    def distace_travelled(self,dist_travel):
+
+        if dist_travel <= int(self.tank_capacity)*float(self.millage):
+            print("Car can cover if tank was full at start.")
+        else:
+            print("Car tank will empty at %f if tank was full at start."%dist_travel)
+
+    #method5
+    def overspeed(self,speed):
+        if speed > 100:
+            print("Car is Over Speeding")
+        else:
+            print("Car is in normal speed")
+
+mahindra={
+    "car_name":"Scorpio",
+    "free_service": "2",
+    "seater":"7",
+    "millage":"15",
+    "tank_capacity":"60"}
+
+hyundai={
+    "car_name":"i20",
+    "free_service": "3",
+    "seater":"5",
+    "millage":"10",
+    "tank_capacity":"50"}
+
+mahindra_obj= Car()
+mahindra_obj.car_name=mahindra["car_name"]
+mahindra_obj.free_service=mahindra["free_service"]
+mahindra_obj.seater=mahindra["seater"]
+mahindra_obj.millage=mahindra["millage"]
+mahindra_obj.tank_capacity=mahindra["tank_capacity"]
+
+mahindra_obj.sit_in_car()
+mahindra_obj.start_car()
+mahindra_obj.overspeed(120)
+mahindra_obj.distace_travelled(700)
+mahindra_obj.stop_car()
+
+hyundai_obj= Car()
+hyundai_obj.car_name=hyundai["car_name"]
+hyundai_obj.free_service=hyundai["free_service"]
+hyundai_obj.seater=hyundai["seater"]
+hyundai_obj.millage=hyundai["millage"]
+hyundai_obj.tank_capacity=hyundai["tank_capacity"]
+
+hyundai_obj.sit_in_car()
+hyundai_obj.start_car()
+hyundai_obj.overspeed(90)
+hyundai_obj.distace_travelled(350)
+hyundai_obj.stop_car()
+
